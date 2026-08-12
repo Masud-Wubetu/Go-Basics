@@ -4,14 +4,18 @@ import "fmt"
 
 
 func main() {
-	var channelName string;
-	channelName = "MasudDev"
+	var greeting string
+	greeting = "Hello World"
+	fmt.Println(greeting)
 
-	var year int = 2026
+	var count int
+	count = 25
+	fmt.Println(count)
+	
+	var isRunning bool
+	isRunning = true
+	fmt.Println(isRunning)
 
-	fmt.Println("Channel: ", channelName)
-	fmt.Println("Year: ", year)
-
-	var rating float64 = 4.8
-	fmt.Println("Rating: ", rating)
+	email := "test@gmail.com"
+	fmt.Println(email)
 }
