@@ -6,11 +6,14 @@ func getNumbers() (int, int) {
 	return 5, 10
 }
 
+const PI = 3.14
+
 func main() {
+    const GFG = "GeeksforGeeks"
+    fmt.Println("Hello", GFG)
 
-	a, b := getNumbers()
+    fmt.Println("Happy", PI, "Day")
 
-	fmt.Println("First Number: ", a)
-	fmt.Println("Second Number: ", b)
-
+    const Correct = true
+    fmt.Println("Go rules?", Correct)
 }
