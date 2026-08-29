@@ -1,28 +1,16 @@
 package main
 
 import "fmt"
-import "rsc.io/quote"
 
-const (
-	Sunday = iota + 1
-	Monday
-	Tuesday
-	Wednesday
-	Thursday
-	Friday
-	Saturday
-
-)
+func getNumbers() (int, int) {
+	return 5, 10
+}
 
 func main() {
 
-	fmt.Println(Sunday)
-	fmt.Println(Monday)
-	fmt.Println(Tuesday)
-	fmt.Println(Thursday)
-	fmt.Println(Wednesday)
-	fmt.Println(Friday)
-	fmt.Println(Saturday)
-	fmt.Println(quote.Go())
+	a, b := getNumbers()
+
+	fmt.Println("First Number: ", a)
+	fmt.Println("Second Number: ", b)
 
 }
