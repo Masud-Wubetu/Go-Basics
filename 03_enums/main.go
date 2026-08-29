@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "rsc.io/quote"
 
 const (
 	Sunday = iota + 1
@@ -22,5 +23,6 @@ func main() {
 	fmt.Println(Wednesday)
 	fmt.Println(Friday)
 	fmt.Println(Saturday)
+	fmt.Println(quote.Go())
 
 }
