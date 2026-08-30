@@ -1,13 +1,15 @@
 package main
 import "fmt"
 func main() {
-	day := 6
-	switch day {
-	case 1, 2, 3, 4, 5:
-		fmt.Println("Weekday")
-	case 6, 7:
-		fmt.Println("Weekend")
+	var value interface{} = 3.14
+	switch v := value.(type) {
+	case int:
+		fmt.Println("Integer:", v)
+	case string:
+		fmt.Println("String:", v)
+	case float64:
+		fmt.Println("Float:", v)
 	default:
-		fmt.Println("Invalid day")
+		fmt.Printf("Unknown type: %T\n", v)
 	}
 }
