@@ -6,15 +6,11 @@ import (
 
 func main() {
 
-    sum := 0
-    num := 1
+    numbers := []int{10, 20, 30, 40}
 
-    for num <= 5 {
-        sum += num
-        num++
+    for index, value := range numbers {
+        fmt.Printf("Index : %d, Value: %d\n", index, value)
     }
-
-    fmt.Println("Sum: ", sum)
 
 }
 
