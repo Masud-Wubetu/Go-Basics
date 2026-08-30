@@ -9,24 +9,30 @@ func main() {
    p:= 34
    q:= 20
     
-   // Addition
-   result1:= p + q
-   fmt.Printf("Result of p + q = %d", result1)
+   // ‘=='(Equal To)
+   result1:= p == q
+   fmt.Println(result1)
     
-   // Subtraction
-   result2:= p - q
-   fmt.Printf("\nResult of p - q = %d", result2)
+   // ‘!='(Not Equal To)
+   result2:= p != q
+   fmt.Println(result2)
     
-   // Multiplication
-   result3:= p * q
-   fmt.Printf("\nResult of p * q = %d", result3)
+   // ‘<‘(Less Than)
+   result3:= p < q
+   fmt.Println(result3)
     
-   // Division
-   result4:= p / q
-   fmt.Printf("\nResult of p / q = %d", result4)
+   // ‘>'(Greater Than)
+   result4:= p > q
+   fmt.Println(result4)
     
-   // Modulus
-   result5:= p % q
-   fmt.Printf("\nResult of p %% q = %d", result5)
+   // ‘>='(Greater Than Equal To)
+   result5:= p >= q
+   fmt.Println(result5)
+    
+   // ‘<='(Less Than Equal To)
+   result6:= p <= q
+   fmt.Println(result6)
+    
+
 
 }
