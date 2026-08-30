@@ -6,10 +6,10 @@ import (
 
 func main() {
 
-    numbers := []int{10, 20, 30, 40}
+    str := "Hello"
 
-    for index, value := range numbers {
-        fmt.Printf("Index : %d, Value: %d\n", index, value)
+    for index, char := range str {
+        fmt.Printf("Index : %d, Value: %c\n", index, char)
     }
 
 }
