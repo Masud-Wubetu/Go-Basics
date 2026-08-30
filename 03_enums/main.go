@@ -15,6 +15,10 @@ func main() {
     helloWorld += "!"
     fmt.Println(helloWorld) 
 
+     // Compare strings.
+    fmt.Println(A == "GFG")   
+    fmt.Println(B < A) 
+
     
     const Correct = true
     fmt.Println("Go rules?", Correct)
