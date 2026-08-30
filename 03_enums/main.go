@@ -6,15 +6,15 @@ import (
 
 func main() {
 
-    count := 1
-   
-    for {
-        fmt.Println("count: ", count)
-        count++
+    sum := 0
+    num := 1
 
-        if count > 5 {
-            break
-        }
+    for num <= 5 {
+        sum += num
+        num++
     }
+
+    fmt.Println("Sum: ", sum)
+
 }
 
