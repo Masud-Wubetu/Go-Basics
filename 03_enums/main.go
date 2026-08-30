@@ -5,9 +5,16 @@ import (
 )
 
 func main() {
+
+    count := 1
    
-   for i := 1; i <= 5; i++ {
-    fmt.Println(i)
-   }
+    for {
+        fmt.Println("count: ", count)
+        count++
+
+        if count > 5 {
+            break
+        }
+    }
 }
 
