@@ -2,23 +2,31 @@ package main
 
 import (
     "fmt"
-    "reflect"
 )
 
 func main() {
    
-   // Creating a rune
-   rune1 := 'B'
-   rune2 := 'g'
-   rune3 := '\a'
+   p:= 34
+   q:= 20
+    
+   // Addition
+   result1:= p + q
+   fmt.Printf("Result of p + q = %d", result1)
+    
+   // Subtraction
+   result2:= p - q
+   fmt.Printf("\nResult of p - q = %d", result2)
+    
+   // Multiplication
+   result3:= p * q
+   fmt.Printf("\nResult of p * q = %d", result3)
+    
+   // Division
+   result4:= p / q
+   fmt.Printf("\nResult of p / q = %d", result4)
+    
+   // Modulus
+   result5:= p % q
+   fmt.Printf("\nResult of p %% q = %d", result5)
 
-   // Displaying a rune and its type
-    fmt.Printf("Rune 1: %c; Unicode: %U; Type: %s", rune1,
-                             rune1, reflect.TypeOf(rune1))
-    
-    fmt.Printf("\nRune 2: %c; Unicode: %U; Type: %s", rune2,
-                               rune2, reflect.TypeOf(rune2))
-    
-    fmt.Printf("\nRune 3: Unicode: %U; Type: %s", rune3, 
-                                 reflect.TypeOf(rune3))
 }
