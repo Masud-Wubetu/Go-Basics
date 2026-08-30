@@ -6,31 +6,10 @@ import (
 
 func main() {
    
-   var p = 23
-   var q = 60
-
-   // & (bitwise AND)
-   result1:= p & q
-   fmt.Printf("Result of p & q = %d", result1)
-    
-   // | (bitwise OR)
-   result2:= p | q
-   fmt.Printf("\nResult of p | q = %d", result2)
-    
-   // ^ (bitwise XOR)
-   result3:= p ^ q
-   fmt.Printf("\nResult of p ^ q = %d", result3)
-    
-   // << (left shift)
-   result4:= p << 1
-   fmt.Printf("\nResult of p << 1 = %d", result4)
-    
-   // >> (right shift)
-   result5:= p >> 1
-   fmt.Printf("\nResult of p >> 1 = %d", result5)
-    
-   // &^ (AND NOT)
-   result6:= p &^ q
-   fmt.Printf("\nResult of p &^ q = %d", result6)
-
+    a := 4
+   
+    b := &a 
+    fmt.Println(*b) 
+    *b = 7 
+    fmt.Println(a) 
 }
