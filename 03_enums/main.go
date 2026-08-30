@@ -1,19 +1,13 @@
 package main
 import "fmt"
 func main() {
-	day := 4
-	switch day {
-	case 1:
-		fmt.Println("Monday")
-	case 2:
-		fmt.Println("Tuesday")
-	case 3:
-		fmt.Println("Wednesday")
-	case 4:
-		fmt.Println("Thursday")
-	case 5:
-		fmt.Println("Friday")
+	num := -5
+	switch {
+	case num > 0:
+		fmt.Println("Positive")
+	case num < 0:
+		fmt.Println("Negative")
 	default:
-		fmt.Println("Invalid day")
+		fmt.Println("Zero")
 	}
 }
