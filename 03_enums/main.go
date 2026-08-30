@@ -6,10 +6,14 @@ import (
 
 func main() {
    
-    a := 4
-   
-    b := &a 
-    fmt.Println(*b) 
-    *b = 7 
-    fmt.Println(a) 
+    var totalsum int = 846
+    var number int = 19
+    var avg float32
+
+    // explicit type conversion
+    avg = float32(totalsum) / float32(number)
+
+    // Displaying the result
+    fmt.Printf("Average = %f\n", avg)
 }
+
