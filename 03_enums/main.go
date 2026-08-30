@@ -1,25 +1,24 @@
 package main
 
-import "fmt"
-
-func getNumbers() (int, int) {
-	return 5, 10
-}
+import (
+    "fmt"
+    "reflect"
+)
 
 func main() {
    
-    const A = "GFG"
-    var B = "GeeksforGeeks"
+   // Creating a rune
+   rune1 := 'B'
+   rune2 := 'g'
+   rune3 := '\a'
 
-    var helloWorld = A+ " " + B
-    helloWorld += "!"
-    fmt.Println(helloWorld) 
-
-     // Compare strings.
-    fmt.Println(A == "GFG")   
-    fmt.Println(B < A) 
-
+   // Displaying a rune and its type
+    fmt.Printf("Rune 1: %c; Unicode: %U; Type: %s", rune1,
+                             rune1, reflect.TypeOf(rune1))
     
-    const Correct = true
-    fmt.Println("Go rules?", Correct)
+    fmt.Printf("\nRune 2: %c; Unicode: %U; Type: %s", rune2,
+                               rune2, reflect.TypeOf(rune2))
+    
+    fmt.Printf("\nRune 3: Unicode: %U; Type: %s", rune3, 
+                                 reflect.TypeOf(rune3))
 }
