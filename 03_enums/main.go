@@ -1,11 +1,18 @@
 package main
 import "fmt"
-func double(num *int) {
-	*num *= 2
+
+func divide(a, b int) (int, int) {
+
+    quotient := a / b
+    remainder := a % b
+
+    return quotient, remainder
+
 }
+
 func main() {
-	x := 5
-    fmt.Println("Before: ", x)
-    double(&x)
-    fmt.Println("After: ", x)
+    q, r := divide(10, 3) 
+
+    fmt.Println("quotient: ", q)
+    fmt.Println("remainder: ", r)
 }
