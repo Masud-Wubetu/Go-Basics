@@ -1,18 +1,17 @@
 package main
 import "fmt"
 
-func divide(a, b int) (int, int) {
-
-    quotient := a / b
-    remainder := a % b
-
-    return quotient, remainder
-
+// Variadic function to calculate sum
+func sum(nums ...int) int {
+    total := 0
+    for _, n := range nums {
+        total += n
+    }
+    return total
 }
 
 func main() {
-    q, r := divide(10, 3) 
-
-    fmt.Println("quotient: ", q)
-    fmt.Println("remainder: ", r)
+    fmt.Println("Sum of 1, 2, 3:", sum(1, 2, 3))
+    fmt.Println("Sum of 4, 5:", sum(4, 5))
+    fmt.Println("Sum of no numbers:", sum())
 }
