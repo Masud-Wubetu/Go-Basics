@@ -1,17 +1,13 @@
 package main
 import "fmt"
-
-// Variadic function to calculate sum
 func sum(nums ...int) int {
-    total := 0
-    for _, n := range nums {
-        total += n
-    }
-    return total
+	total := 0
+	for _, num := range nums {
+		total += num
+	}
+	return total
 }
-
 func main() {
-    fmt.Println("Sum of 1, 2, 3:", sum(1, 2, 3))
-    fmt.Println("Sum of 4, 5:", sum(4, 5))
-    fmt.Println("Sum of no numbers:", sum())
+	numbers := []int{10, 20, 30}
+	fmt.Println(sum(numbers...))
 }
