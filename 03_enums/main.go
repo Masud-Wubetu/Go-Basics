@@ -1,9 +1,13 @@
 package main
 import "fmt"
-func multiply(a, b int) int {
-	return a * b
+func increment(num int) {
+	num++
+    fmt.Println("Inside Function: ", num)
 }
 func main() {
-	result := multiply(5, 10)
-	fmt.Println(result)
+	x := 5
+
+    fmt.Println("Before Function Call: ", x)
+    increment(x)
+    fmt.Println("After Function Call: ", x)
 }
