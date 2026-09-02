@@ -1,13 +1,36 @@
 package main
-import "fmt"
-func sum(nums ...int) int {
-	total := 0
-	for _, num := range nums {
-		total += num
-	}
-	return total
-}
+import (
+    "fmt"
+    "time"
+)
+
 func main() {
-	numbers := []int{10, 20, 30}
-	fmt.Println(sum(numbers...))
+
+    switch hour := time.Now().Hour(); {
+    case hour < 12:
+        fmt.Println("Good Morning")
+    case hour < 17:
+        fmt.Println("Good Afternoon")
+    default:
+         fmt.Println("Good Evening")
+    }
+
+    checkType := func(i interface{}) {
+        switch v := i.(type) {
+        case int:
+            fmt.Printf("Integer: %d\n", v)
+        case string:
+            fmt.Printf("String: %s\n", v)
+        case bool:
+            fmt.Printf("Boolean: %t\n", v)
+        default:
+            fmt.Printf("Unkown Type: %T\n", v) 
+        }
+    }
+
+    checkType(21)
+    checkType("Test")
+    checkType(true)
+    checkType(312.23)
+    
 }
