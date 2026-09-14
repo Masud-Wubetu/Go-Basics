@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"strings"
-	"slices"
 )
 
 var productPrices = map[string] float64 {
