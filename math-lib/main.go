@@ -3,8 +3,19 @@ package main
 import (
 	"fmt"
 	"strings"
-	
+	"time"
 )
+
+type Employee struct {
+	Id int
+	FirstName string
+	SecondName string
+	Position string
+	Salary int
+	IsActive bool
+	JoinedAt time.Time
+}
+
 
 type MathError struct {
 	Operation string
